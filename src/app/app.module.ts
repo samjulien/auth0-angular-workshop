@@ -17,6 +17,7 @@ import { ExternalApiComponent } from './pages/external-api/external-api.componen
 
 import { AuthModule } from '@auth0/auth0-angular';
 import { environment as env } from '../environments/environment';
+import { LoginButtonComponent } from './components/login-button/login-button.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { environment as env } from '../environments/environment';
     HomeComponent,
     ProfileComponent,
     ExternalApiComponent,
+    LoginButtonComponent,
   ],
   imports: [
     BrowserModule,
