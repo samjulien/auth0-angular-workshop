@@ -15,6 +15,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ExternalApiComponent } from './pages/external-api/external-api.component';
 
+import { AuthModule } from '@auth0/auth0-angular';
+import { environment as env } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +36,9 @@ import { ExternalApiComponent } from './pages/external-api/external-api.componen
     AppRoutingModule,
     HttpClientModule,
     FontAwesomeModule,
+    AuthModule.forRoot({
+      ...env.auth,
+    }),
   ],
   bootstrap: [AppComponent],
 })
