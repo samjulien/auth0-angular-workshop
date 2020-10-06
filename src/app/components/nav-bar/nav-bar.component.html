@@ -6,6 +6,8 @@
       <div class="navbar-nav ml-auto">
         <app-login-button *ngIf="(auth.isAuthenticated$ | async) === false">
         </app-login-button>
+        <app-logout-button *ngIf="auth.isAuthenticated$ | async">
+        </app-logout-button>
       </div>
     </div>
   </nav>
