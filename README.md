@@ -27,6 +27,8 @@ To get started with the workshop, first run npm install:
 npm install
 ```
 
+The server relies on the existence of a `.env` file, so go ahead and make a copy of `.env.example` at the root of the project and remove `.example` from it. We'll update the values in it later.
+
 You can then start both the client and server in development mode with one command:
 
 ```bash
@@ -97,7 +99,7 @@ With these values in place, hit the "Create" button.
 ### Add the Auth0 configuration variables to Express
 Now, click on the "Quick Start" tab of your Auth0 API page. This page presents instructions on how to set up different APIs. From the code box, choose "Node.js". Keep this page open as you'll be using the values next.
 
-The server config uses a `.env` file at the root of the project. Duplicate `.env.example` and remove the `.example` from the end of it. 
+The server config uses a `.env` file at the root of the project.
 
 Head back to the "Node.js" code snippet from the Auth0 API "Quick Start" page. Locate the definition of `jwtCheck`:
 
